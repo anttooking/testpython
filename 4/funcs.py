@@ -1,6 +1,7 @@
 
 
-def getANumber(prompt, retryAttempts = 4):
+def getANumber(prompt : str, retryAttempts : int = 4) -> int:
+    """ Gets a number from the user with the given number of attempts"""
     while True:
         
         #Decrement retryAttempts
@@ -19,4 +20,11 @@ def getANumber(prompt, retryAttempts = 4):
             pass
 
 
-getANumber("gimme a number! ", retryAttempts=10)
+#getANumber("gimme a number! ", retryAttempts=10)
+
+# Lambda functions
+t = lambda c: (c,-c,c)
+print (t(3)) #turn into tupple (3,-3,3)
+
+
+## PEP 8 https://www.python.org/dev/peps/pep-0008/
