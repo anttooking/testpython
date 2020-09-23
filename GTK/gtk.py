@@ -5,7 +5,7 @@ from gi.repository import Gtk
 win = Gtk.Window()
 
 label = Gtk.Label()
-label.set_text("I am a label")
+label.set_text("Still a label")
 label.set_size_request(200,200)
 
 combo = Gtk.ComboBox()
